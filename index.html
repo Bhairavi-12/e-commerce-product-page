@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+<title>Headphones | E-commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ecommerce</div>
+           <ul> 
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-cart-shopping"></i>       
+         </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flex-box">
+            <div class="left">
+                <div class="big-img">
+                    <img src="img/img 1.jpg">
+                </div>
+                <div class="images">
+                    <div class="small-img">
+                        <img src="img/img 3" onclick="showImg(this.src)">
+                    </div>
+                    <div class="small-img">
+                        <img src="img/img 2.jpg" onclick="showImg(this.src)">
+                    </div>
+                    <div class="small-img">
+                        <img src="img/img 5.jpeg" onclick="showImg(this.src)">
+                    </div>
+                    <div class="small-img">
+                        <img src="img/img 6.jpg" onclick="showImg(this.src)"> 
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="url">Home > Product > Headphones</div>
+                <div class="pname">Ultra Wireless $60 Headphone $60 with Bluetooth 
+                    <p>Brand: Sony   |  Seller: Esther Howard</p>
+                </div>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price"><h1>$49.90</h1>
+                <ul>
+                    <li>4.6 inch HD Touch Screen(1280x720)</li>
+                    <li>Android 4.4 kitkat OS</li>
+                    <li>1.5 GHz Quuad Core Processor</li>
+                    <li>16 MP front and 24 megapixel CMOS rear tamera </li>
+                </ul>
+                </div>
+                <div class="size">
+                    <p>Size :</p>
+                    <div class="psize active">S</div>
+                    <div class="psize">M</div>
+                    <div class="psize">L</div>
+                    <div class="psize">XL</div>
+                </div>
+                <div class="btn-box">
+                    <button class="cart-btn">Add to cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src=pic;
+        } 
+    </script>
+</body>
+</html>
